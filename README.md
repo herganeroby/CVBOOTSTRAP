@@ -1,1 +1,1 @@
-# CVBOOTSTRAP
+# cv-v2-bootstrap

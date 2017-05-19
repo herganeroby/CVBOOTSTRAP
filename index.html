@@ -1,34 +1,112 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Grasutu</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="bootstrap.min.css">
-        <link rel="stylesheet" href="bootstrap-theme.min.css">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>CV version 2 with Bootstrap</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Load Bootstap CSS -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
-
     <body>
-        <!--Header-->
-        <div class="container-fluid bg-warning">Header</div> 
-        <!--Main picture-->
+        <!-- Header -->
+        <div class="container-fluid bg-warning">HEADER</div>
+        <!-- Main Picture -->
         <div class="container-fluid bg-danger text-center main-picture">
-            <h1><mark>This</mark> is <small>me!</small></h1>
-            <img class="img-circle"alt="image of me"                                                                                                         src="https://media.licdn.com/mpr/mpr/shrink_100_100/AAEAAQAAAAAAAApbAAAAJDMyOTI1MDk5LWNiZjAtNGJmYy1iNmJiLTFlNWJjNzQ2NzFjOA.jpg">
-            <h1><mark>Find</mark> more about <small>me!</small></h1>
-        </div> 
-        <!--About me-->
-        <div class="container-fluid bg-info">
-            <h1>Mancare de porci</h1>
-        </div> 
-        <!--Footer-->
-        <div class="container-fluid">
-            <h1>Mancare de porci</h1>
-        </div>   
-        <!--<script src="js/bootstrap.min.js"></script>-->
+            <h1 class="first-h1"><mark>This</mark> is <small>me</small></h1>
+            <img class="img-circle img-responsive center-block" alt="This is my picture" src="img/bird.jpg">
+            <h1 class="second-h1"><mark>Find</mark> about <small>me</small></h1>
+        </div>
+        <!-- About Me -->
+        <div class="container-fluid bg-info about-me">      
+            <p class="text-info bg-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Text Inline-Block</span> Sed eu commodo ex. Integer id nisl finibus, semper nisi pellentesque, ultrices diam. Praesent consectetur, neque et maximus tincidunt, lorem eros iaculis lorem, ut imperdiet erat ipsum luctus augue. Sed vel nunc sit amet nibh interdum auctor mattis nec urna. Nam turpis orci, tincidunt sit amet faucibus at, iaculis quis diam. Cras imperdiet commodo purus in sollicitudin. Proin et enim enim. Cras feugiat magna vel lectus vehicula, sed tristique augue iaculis. Suspendisse elit dui, porttitor vitae bibendum at, facilisis sit amet enim. Nam pulvinar quam eu pellentes"que accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            
+
+            <div class="table-me">
+                <div class="row">
+                    <div class="cell">
+                       <a class="btn btn-default btn-lg" href="#">Button
+                        <span class="badge"><i class="fa fa-star-half-o" aria-hidden="true"></i></span></a> 
+                    </div>
+                    <div class="cell">
+                        <a class="btn btn-success btn-lg" href="#">Button</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <a class="btn btn-danger btn-lg" href="#">Button</a>
+                    </div>
+                    <div class="cell">
+                    <div class="dropdown">
+                        <button class="btn btn-warning dropdown-toggle btn-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Dropdown button
+                            <span class="caret"></span>
+                        </button>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div> 
+            </div>
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th><span class="label label-warning">What I like</span></th>
+                        <th><span class="label label-warning">What I do not like</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Helpping</td>
+                        <td>Wasting Time</td>
+                    </tr>
+                    <tr>
+                        <td>Running</td>
+                        <td>Shopping</td>
+                    </tr>
+                    <tr>    
+                        <td><span class="badge"><i class="fa fa-book" aria-hidden="true"></i></span> Reading</td>
+                        <td><span class="badge"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</span></td>
+                    </tr> 
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th><span class="label label-primary">What I like</span></th>
+                        <th><span class="label label-primary">What I do not like</span></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <!-- Footer -->
+        <div class="container-fluid footer-me">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#adress-home" data-toggle="tab">Home Adress</a></li>
+                <li><a href="#adress-school" data-toggle="tab">Work Adress</a></li>
+            </ul>
+        </div>
+
+        <div class="tab-content">
+            <div class="tab-pane fade active in" id="adress-home">Adress Home</div>
+            <div class="tab-pane fade" id="adress-school"><span class="badge">Adress School</span>
+                <br />
+                <br />
+                Str. Nufarului nr. 87 <br />
+                410597 Oradea, Romania <br />
+                Tel./Fax: 40 077352564 <br />
+                Email: contact@emanuel.ro <br/>
+            </div>
+        </div>
+        <!-- Load Bootstrap JS -->      
+        <script src="bootstrap/jquery-3.2.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script> 
     </body>
-
-
 </html>
